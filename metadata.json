@@ -1,0 +1,6 @@
+{
+  "name": "DentalSoft",
+  "description": "Cabinet Dentaire - Système de gestion de clinique dentaire moderne, زاهي وسهل الاستخدام للأطباء",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

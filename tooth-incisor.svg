@@ -1,0 +1,6 @@
+<svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- root -->
+  <path d="M35,60 C35,110 40,140 50,145 C60,140 65,110 65,60" fill="#fff" stroke="#333" stroke-width="2"/>
+  <!-- crown -->
+  <path d="M30,60 C25,30 30,10 50,10 C70,10 75,30 70,60 C65,70 35,70 30,60 Z" fill="#fff" stroke="#333" stroke-width="2"/>
+</svg>

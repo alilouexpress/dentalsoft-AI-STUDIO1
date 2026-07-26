@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Sleek elegant scrollbars for horizontal lists */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9; /* elegant light-slate track line showing continuation/sequence */
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* slate-300 */
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8; /* sky-400 */
+}
+
