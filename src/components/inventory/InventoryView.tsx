@@ -56,7 +56,7 @@ export const InventoryView: React.FC = () => {
         </button>
       </div>
 
-      <div className="bg-white p-4 rounded-[28px] border border-sky-100 shadow-sm flex items-center justify-between">
+      <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between">
         <div className="flex items-center bg-slate-100 p-1 rounded-2xl border border-slate-200/80">
           {(['Produits', 'Fournisseurs', 'Alertes'] as const).map((tab) => (
             <button
@@ -72,7 +72,7 @@ export const InventoryView: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-[28px] border border-sky-100 shadow-sm overflow-hidden">
+      <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left rtl:text-right text-xs">
             <thead className="bg-slate-50 border-b border-slate-200/80 text-slate-500 font-bold uppercase tracking-wider">

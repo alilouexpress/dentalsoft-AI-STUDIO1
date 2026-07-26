@@ -184,7 +184,7 @@ export const Odontogram: React.FC<OdontogramProps> = ({ patientId, onAddTreatmen
   return (
     <div className="max-w-4xl mx-auto space-y-4">
       {/* Header & Legend */}
-      <div className="bg-white p-5 rounded-[24px] border border-slate-100 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="bg-white p-5 rounded-xl border border-slate-100 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h3 className="text-base font-bold text-slate-900">Odontogramme</h3>
           <p className="text-xs text-slate-500">Vue globale des arcades dentaires</p>
@@ -215,7 +215,7 @@ export const Odontogram: React.FC<OdontogramProps> = ({ patientId, onAddTreatmen
         </div>
       </div>
 
-      <div className="bg-white p-5 rounded-[28px] border border-slate-100 shadow-sm">
+      <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
         {/* Legend */}
         <div className="flex flex-wrap items-center justify-center gap-3 text-[10px] font-bold text-slate-500 mb-6 bg-slate-50 py-2 px-4 rounded-full border border-slate-100 w-fit mx-auto">
           {statusOptions.map((opt) => (
@@ -278,7 +278,7 @@ export const Odontogram: React.FC<OdontogramProps> = ({ patientId, onAddTreatmen
       </div>
 
       {/* Selected Tooth Detail Panel */}
-      <div className="bg-slate-50 p-5 rounded-[24px] border border-slate-200">
+      <div className="bg-slate-50 p-5 rounded-xl border border-slate-200">
         <div className="flex flex-col md:flex-row gap-6">
           
           <div className="flex-1 space-y-4">

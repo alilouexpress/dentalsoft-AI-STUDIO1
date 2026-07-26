@@ -57,29 +57,29 @@ export const BillingView: React.FC = () => {
 
       {/* KPI Cards */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-emerald-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 border-b-4 border-b-emerald-500 shadow-sm">
           <p className="text-[10px] font-bold text-slate-400 uppercase">Total Encaissé</p>
           <p className="text-2xl font-black text-emerald-600">{totalCollected.toLocaleString()} DA</p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-sky-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 border-b-4 border-b-sky-500 shadow-sm">
           <p className="text-[10px] font-bold text-sky-500 uppercase">En attente</p>
           <p className="text-2xl font-black text-sky-600">{pendingAmount.toLocaleString()} DA</p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-rose-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 border-b-4 border-b-rose-500 shadow-sm">
           <p className="text-[10px] font-bold text-rose-500 uppercase">En retard</p>
           <p className="text-2xl font-black text-rose-600">{overdueAmount.toLocaleString()} DA</p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-slate-400 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 border-b-4 border-b-slate-400 shadow-sm">
           <p className="text-[10px] font-bold text-slate-500 uppercase">Total Général</p>
           <p className="text-2xl font-black text-slate-900">{grandTotal.toLocaleString()} DA</p>
         </div>
       </div>
 
       {/* Invoices Table */}
-      <div className="bg-white rounded-[28px] border border-sky-100 shadow-sm overflow-hidden">
+      <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left rtl:text-right text-xs">
             <thead className="bg-slate-50 border-b border-slate-200/80 text-slate-500 font-bold uppercase tracking-wider">

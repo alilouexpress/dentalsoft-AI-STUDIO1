@@ -118,7 +118,7 @@ export const PatientsView: React.FC = () => {
 
       {/* Metric Cards Row */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-sky-500 shadow-sm flex items-center gap-3">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 border-b-4 border-b-sky-500 shadow-sm flex items-center gap-3">
           <div className="w-10 h-10 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center shrink-0">
             <Users className="w-5 h-5" />
           </div>
@@ -128,7 +128,7 @@ export const PatientsView: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-emerald-500 shadow-sm flex items-center gap-3">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 border-b-4 border-b-emerald-500 shadow-sm flex items-center gap-3">
           <div className="w-10 h-10 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
             <UserCheck className="w-5 h-5" />
           </div>
@@ -138,7 +138,7 @@ export const PatientsView: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-amber-500 shadow-sm flex items-center gap-3">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 border-b-4 border-b-amber-500 shadow-sm flex items-center gap-3">
           <div className="w-10 h-10 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
             <UserX className="w-5 h-5" />
           </div>
@@ -148,7 +148,7 @@ export const PatientsView: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-sky-700 shadow-sm flex items-center gap-3">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 border-b-4 border-b-sky-700 shadow-sm flex items-center gap-3">
           <div className="w-10 h-10 rounded-2xl bg-sky-50 text-sky-700 flex items-center justify-center shrink-0">
             <CreditCard className="w-5 h-5" />
           </div>
@@ -160,7 +160,7 @@ export const PatientsView: React.FC = () => {
       </div>
 
       {/* Filter Tabs & Search */}
-      <div className="bg-white p-4 rounded-[28px] border border-sky-100 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="relative w-full sm:w-72">
           <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 rtl:right-3 rtl:left-auto" />
           <input
@@ -190,7 +190,7 @@ export const PatientsView: React.FC = () => {
       </div>
 
       {/* Patient Table */}
-      <div className="bg-white rounded-[28px] border border-sky-100 shadow-sm overflow-hidden">
+      <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
         {filteredPatients.length === 0 ? (
           <div className="py-16 text-center">
             <Users className="w-10 h-10 text-slate-300 mx-auto mb-3" />

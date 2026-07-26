@@ -351,7 +351,7 @@ export const SettingsView: React.FC = () => {
       </div>
 
       {/* Tabs Bar */}
-      <div className="bg-white p-2 rounded-[28px] border border-sky-100 shadow-sm flex items-center gap-2 overflow-x-auto">
+      <div className="bg-white p-2 rounded-2xl border border-slate-100 shadow-xs flex items-center gap-2 overflow-x-auto">
         {(
           [
             'Ordonnance',
@@ -379,7 +379,7 @@ export const SettingsView: React.FC = () => {
       </div>
 
       {/* Tab Contents */}
-      <div className="bg-white p-6 rounded-[28px] border border-sky-100 shadow-sm space-y-6">
+      <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-xs space-y-6">
         {/* ORDONNANCE & EN-TÊTE CONFIGURATION TAB */}
         {activeTab === 'Ordonnance' && (
           <div className="space-y-8">
@@ -1461,7 +1461,7 @@ export const SettingsView: React.FC = () => {
                   onClick={() => setSelectedConfigRole(role)}
                   className={`flex-1 py-1.5 text-[11px] font-black rounded-xl transition-all whitespace-nowrap cursor-pointer ${
                     selectedConfigRole === role
-                      ? 'bg-white text-sky-600 shadow-sm border border-sky-100'
+                      ? 'bg-white text-sky-600 shadow-sm border border-slate-100'
                       : 'text-slate-500 hover:text-slate-800'
                   }`}
                 >

@@ -88,8 +88,8 @@ const getNavThemeClasses = (color: string) => {
     default:
       return {
         outerBg: 'bg-sky-50/80',
-        outerBorder: 'border-sky-100/30',
-        innerBorder: 'border-sky-100',
+        outerBorder: 'border-slate-100/30',
+        innerBorder: 'border-slate-100',
         activeTabBg: 'bg-sky-500 text-white shadow-sky-500/20',
         activeBadgeText: 'text-sky-800',
         activeMarkerBg: 'bg-sky-500',
@@ -321,7 +321,7 @@ export const PatientWorkspaceView: React.FC = () => {
       <MedicalAlertBanner patient={patient} />
 
       {/* Patient Header Banner Card */}
-      <div className="bg-white rounded-[28px] border border-sky-100 shadow-sm p-6 relative overflow-hidden">
+      <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 relative overflow-hidden">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           {/* Patient Details */}
           <div className="flex items-start gap-4">
@@ -357,7 +357,7 @@ export const PatientWorkspaceView: React.FC = () => {
 
           {/* Action Buttons & Balance Card */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-            <div className="px-4 py-3 bg-slate-50 rounded-2xl border border-sky-100 flex items-center justify-between sm:justify-start gap-4">
+            <div className="px-4 py-3 bg-slate-50 rounded-2xl border border-slate-100 flex items-center justify-between sm:justify-start gap-4">
               <div>
                 <p className="text-[10px] font-bold text-slate-400 uppercase">SOLDE DU PATIENT</p>
                 <p className="text-lg font-black text-emerald-600">{patient.balance.toFixed(2)} DA</p>
@@ -581,7 +581,7 @@ export const PatientWorkspaceView: React.FC = () => {
 
             {/* Tab 2: Imagerie */}
             {activeTab === 'imaging' && (
-              <div className="bg-white p-6 rounded-[28px] border border-sky-100 shadow-sm space-y-4">
+              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
                 <div className="flex items-center justify-between">
                   <h3 className="text-base font-black text-slate-900">Radiographies & Imagerie Dentaire</h3>
                   <button
@@ -628,7 +628,7 @@ export const PatientWorkspaceView: React.FC = () => {
 
             {/* Tab 3: Care Plan */}
             {activeTab === 'care-plan' && (
-              <div className="bg-white p-6 rounded-[28px] border border-sky-100 shadow-sm space-y-4">
+              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
                 <div className="flex items-center justify-between">
                   <h3 className="text-base font-black text-slate-900">Plan de soins et Procédures</h3>
                   <button
@@ -673,7 +673,7 @@ export const PatientWorkspaceView: React.FC = () => {
 
             {/* Tab 4: Prescriptions */}
             {activeTab === 'prescriptions' && (
-              <div className="bg-white p-6 rounded-[28px] border border-sky-100 shadow-sm space-y-4">
+              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-base font-black text-slate-900">Ordonnances Médicales & Prescription</h3>
@@ -745,7 +745,7 @@ export const PatientWorkspaceView: React.FC = () => {
 
             {/* Tab 5: Payments */}
             {activeTab === 'payments' && (
-              <div className="bg-white p-6 rounded-[28px] border border-sky-100 shadow-sm space-y-4">
+              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
                 <div className="flex items-center justify-between">
                   <h3 className="text-base font-black text-slate-900">Paiements & Encaissements</h3>
                   <button
@@ -784,7 +784,7 @@ export const PatientWorkspaceView: React.FC = () => {
 
             {/* Tab 6: Chronology */}
             {activeTab === 'chronology' && (
-              <div className="bg-white p-6 rounded-[28px] border border-sky-100 shadow-sm space-y-4">
+              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
                 <h3 className="text-base font-black text-slate-900">Historique Chronologique</h3>
                 <div className="space-y-3 relative border-l-2 border-slate-200 pl-4 ml-2">
                   {auditLogs.slice(0, 5).map((log) => (
@@ -800,7 +800,7 @@ export const PatientWorkspaceView: React.FC = () => {
 
             {/* Tab 7: Documents */}
             {activeTab === 'documents' && (
-              <div className="bg-white p-12 text-center rounded-[28px] border border-sky-100 shadow-sm">
+              <div className="bg-white p-12 text-center rounded-2xl border border-slate-100 shadow-sm">
                 <FolderOpen className="w-12 h-12 text-slate-300 mx-auto mb-3" />
                 <h4 className="text-sm font-bold text-slate-800">Documents administratifs</h4>
                 <p className="text-xs text-slate-400 mt-1 mb-4">Certificats médicaux, consentements éclairés.</p>
@@ -817,7 +817,7 @@ export const PatientWorkspaceView: React.FC = () => {
           <div className="lg:col-span-4 space-y-4">
             
             {/* Clinical Summary Widget */}
-            <div className="bg-white p-5 rounded-[28px] border border-sky-100 shadow-sm space-y-3">
+            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-3">
             <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Résumé Clinique</h3>
             <div className="grid grid-cols-2 gap-2 text-xs">
               <div className="p-3 bg-slate-50 rounded-xl">
@@ -840,7 +840,7 @@ export const PatientWorkspaceView: React.FC = () => {
           </div>
 
           {/* Prochain RDV Card */}
-          <div className="bg-white p-5 rounded-[28px] border border-sky-100 shadow-sm space-y-3">
+          <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-3">
             <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Prochain RDV</h3>
             <p className="text-xs text-slate-500">Aucun rendez-vous planifié</p>
             <button
@@ -852,7 +852,7 @@ export const PatientWorkspaceView: React.FC = () => {
           </div>
 
           {/* Active Treatments */}
-          <div className="bg-white p-5 rounded-[28px] border border-sky-100 shadow-sm space-y-3">
+          <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs space-y-3">
             <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Traitements Actifs</h3>
             <div className="p-3 bg-amber-50 rounded-xl border border-amber-200 text-xs">
               <p className="font-bold text-amber-900">Appareil dentaire / Soins carie</p>
@@ -863,7 +863,7 @@ export const PatientWorkspaceView: React.FC = () => {
           </div>
 
           {/* Alerts & Reminders */}
-          <div className="bg-white p-5 rounded-[28px] border border-sky-100 shadow-sm space-y-2">
+          <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs space-y-2">
             <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Alertes & Rappels</h3>
             <div className="flex items-center gap-2 text-xs text-emerald-700 font-semibold pt-1">
               <CheckCircle className="w-4 h-4 text-emerald-600" />
@@ -872,7 +872,7 @@ export const PatientWorkspaceView: React.FC = () => {
           </div>
 
           {/* Payment History Quick Button */}
-          <div className="bg-white p-5 rounded-[28px] border border-sky-100 shadow-sm space-y-3">
+          <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs space-y-3">
             <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Historique Paiements</h3>
             <button
               onClick={() => setIsAddPaymentModalOpen(true)}

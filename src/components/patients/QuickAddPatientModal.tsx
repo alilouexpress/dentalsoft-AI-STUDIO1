@@ -281,7 +281,7 @@ export const QuickAddPatientModal: React.FC = () => {
 
   return (
     <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200">
-      <div className="bg-white w-full max-w-2xl rounded-[32px] shadow-2xl border border-sky-100 overflow-hidden flex flex-col max-h-[92vh] transition-all">
+      <div className="bg-white w-full max-w-2xl rounded-2xl shadow-2xl border border-slate-100 overflow-hidden flex flex-col max-h-[92vh] transition-all">
         {/* Header */}
         <div className="p-5 sm:p-6 bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white flex items-center justify-between shrink-0 relative overflow-hidden">
           <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-sky-500/20 blur-2xl pointer-events-none"></div>
@@ -563,7 +563,7 @@ export const QuickAddPatientModal: React.FC = () => {
             </div>
 
             {/* Optional Initial Appointment Toggle */}
-            <div className="p-3.5 bg-sky-50/70 border border-sky-100 rounded-2xl space-y-3">
+            <div className="p-3.5 bg-sky-50/70 border border-slate-100 rounded-2xl space-y-3">
               <label className="flex items-center gap-2.5 cursor-pointer font-bold text-slate-800">
                 <input
                   type="checkbox"

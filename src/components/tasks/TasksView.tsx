@@ -54,7 +54,7 @@ export const TasksView: React.FC = () => {
       </div>
 
       {/* Tabs */}
-      <div className="bg-white p-3 rounded-[28px] border border-sky-100 shadow-sm flex items-center gap-2">
+      <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-xs flex items-center gap-2">
         {(['Toutes', 'En attente', 'En cours', 'Terminées'] as const).map((tab) => (
           <button
             key={tab}
@@ -71,7 +71,7 @@ export const TasksView: React.FC = () => {
       </div>
 
       {/* Task List */}
-      <div className="bg-white rounded-[28px] border border-sky-100 shadow-sm overflow-hidden p-4">
+      <div className="bg-white rounded-2xl border border-slate-100 shadow-xs overflow-hidden p-4">
         {filteredTasks.length === 0 ? (
           <div className="py-16 text-center border-2 border-dashed border-slate-100 rounded-2xl">
             <CheckSquare className="w-10 h-10 text-slate-300 mx-auto mb-2" />

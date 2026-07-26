@@ -11,7 +11,7 @@ interface ClaimReceiptModalProps {
 export const ClaimReceiptModal: React.FC<ClaimReceiptModalProps> = ({ claim, patient, onClose }) => {
   return (
     <div className="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
-      <div className="bg-white rounded-[28px] max-w-2xl w-full border border-slate-200 shadow-2xl p-8 space-y-6 animate-in fade-in">
+      <div className="bg-white rounded-2xl max-w-2xl w-full border border-slate-200 shadow-2xl p-8 space-y-6 animate-in fade-in">
         <div className="flex items-center justify-between border-b border-slate-200 pb-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-2xl bg-slate-900 text-sky-400 flex items-center justify-center font-black">

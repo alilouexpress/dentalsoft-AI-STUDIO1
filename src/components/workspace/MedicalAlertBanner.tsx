@@ -194,7 +194,7 @@ export const MedicalAlertBanner: React.FC<MedicalAlertBannerProps> = ({ patient 
     <>
       {/* HIGH IMPACT MEDICAL ALERT BANNER */}
       <div
-        className={`${theme.bannerBg} text-white rounded-[26px] p-5 shadow-xl border ${theme.bannerBorder} relative overflow-hidden transition-all`}
+        className={`${theme.bannerBg} text-white rounded-2xl p-5 shadow-xl border ${theme.bannerBorder} relative overflow-hidden transition-all`}
       >
         {/* Glow ambient background effect */}
         <div className="absolute -right-12 -top-12 w-48 h-48 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -369,7 +369,7 @@ export const MedicalAlertBanner: React.FC<MedicalAlertBannerProps> = ({ patient 
   function renderModal() {
     return (
       <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
-        <div className="bg-white rounded-[28px] max-w-2xl w-full p-6 shadow-2xl border border-slate-100 space-y-6 my-8 animate-in fade-in">
+        <div className="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-2xl border border-slate-100 space-y-6 my-8 animate-in fade-in">
           {/* Modal Header */}
           <div className="flex items-center justify-between border-b border-slate-100 pb-4">
             <div className="flex items-center gap-3">

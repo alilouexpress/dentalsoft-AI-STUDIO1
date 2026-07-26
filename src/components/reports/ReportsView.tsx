@@ -47,13 +47,13 @@ export const ReportsView: React.FC = () => {
 
       {/* Metric Cards */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-emerald-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-slate-400 uppercase">Chiffre d'affaires</p>
           <p className="text-2xl font-black text-slate-900">9 700 DA</p>
           <p className="text-[10px] font-bold text-emerald-600 mt-1">Cumulé ce mois</p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-rose-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-slate-400 uppercase">Mois dernier</p>
           <p className="text-2xl font-black text-slate-900">8 730 DA</p>
           <p className="text-[10px] font-bold text-rose-500 mt-1 flex items-center gap-0.5">
@@ -61,13 +61,13 @@ export const ReportsView: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-sky-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-slate-400 uppercase">Moyenne quotidienne</p>
           <p className="text-2xl font-black text-sky-600">0.1</p>
           <p className="text-[10px] text-slate-400 mt-1">Patients par jour</p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-emerald-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-slate-400 uppercase">Taux d'achèvement</p>
           <p className="text-2xl font-black text-emerald-600">100%</p>
           <p className="text-[10px] text-slate-400 mt-1">Traitements finalisés</p>
@@ -78,7 +78,7 @@ export const ReportsView: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         
         {/* Chart 1: Revenu Mensuel Curve */}
-        <div className="bg-white p-5 rounded-[28px] border border-sky-100 shadow-sm space-y-4">
+        <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs space-y-4">
           <h3 className="text-sm font-black text-slate-900">{t('monthly_revenue')}</h3>
 
           <div className="h-56 relative flex items-end pt-6 pb-2 border-b border-slate-100">
@@ -115,7 +115,7 @@ export const ReportsView: React.FC = () => {
         </div>
 
         {/* Chart 2: Procedure Distribution */}
-        <div className="bg-white p-5 rounded-[28px] border border-sky-100 shadow-sm space-y-4">
+        <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs space-y-4">
           <h3 className="text-sm font-black text-slate-900">{t('procedure_distribution')}</h3>
 
           <div className="space-y-2.5 py-2">

@@ -345,7 +345,7 @@ export const ClinicalNotesEditor: React.FC<ClinicalNotesEditorProps> = ({ patien
       )}
 
       {/* Main Active Consultation Banner */}
-      <div className="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white rounded-[28px] p-6 shadow-xl border border-sky-800/40 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white rounded-2xl p-6 shadow-xl border border-sky-850 relative overflow-hidden">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="space-y-1">
             <div className="flex items-center gap-2 flex-wrap">
@@ -399,7 +399,7 @@ export const ClinicalNotesEditor: React.FC<ClinicalNotesEditorProps> = ({ patien
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Left Column: Active Rich Text Editor (8 Cols) */}
         <div className="lg:col-span-8 space-y-4">
-          <div className="bg-white rounded-[28px] border border-sky-100 shadow-sm overflow-hidden flex flex-col">
+          <div className="bg-white rounded-2xl border border-slate-100 shadow-xs overflow-hidden flex flex-col">
             {/* Header: Title, Doctor, Category */}
             <div className="p-5 bg-slate-50/80 border-b border-slate-100 space-y-4">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -741,7 +741,7 @@ export const ClinicalNotesEditor: React.FC<ClinicalNotesEditorProps> = ({ patien
 
         {/* Right Column: Historical Clinical Notes Timeline (4 Cols) */}
         <div className="lg:col-span-4 space-y-4">
-          <div className="bg-white rounded-[28px] border border-sky-100 shadow-sm p-5 space-y-4">
+          <div className="bg-white rounded-2xl border border-slate-100 shadow-xs p-5 space-y-4">
             <div className="flex items-center justify-between">
               <h3 className="text-sm font-black text-slate-900 flex items-center gap-2">
                 <FileText className="w-4 h-4 text-sky-600" />

@@ -61,7 +61,7 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white/90 backdrop-blur-md border-b border-sky-100 sticky top-0 z-20 px-4 sm:px-6 py-3 transition-all">
+    <header className="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-20 px-4 sm:px-6 py-3.5 transition-all">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         {/* Global Search Bar & Quick Add Button */}
         <div className="flex items-center gap-3 flex-1 max-w-xl">
@@ -72,19 +72,19 @@ export const Header: React.FC = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t('search_placeholder')}
-              className="w-full pl-9 pr-4 rtl:pr-9 rtl:pl-4 py-2 text-sm bg-slate-50 border border-slate-200/90 rounded-2xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-sky-500/30 focus:border-sky-500 transition-all text-slate-800 placeholder-slate-400 font-medium"
+              className="w-full pl-9 pr-4 rtl:pr-9 rtl:pl-4 py-2 text-xs bg-slate-50 border border-slate-200/60 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-sky-500/10 focus:border-sky-500 transition-all text-slate-800 placeholder-slate-400 font-bold"
             />
           </div>
 
           {/* Quick Add Patient Header Action */}
           <button
             onClick={openQuickAddPatient}
-            className="px-3.5 py-2 rounded-2xl bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 text-white font-bold text-xs shadow-md shadow-sky-500/20 transition-all flex items-center gap-2 shrink-0 cursor-pointer group"
+            className="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs shadow-sm transition-all flex items-center gap-2 shrink-0 cursor-pointer group active:scale-95"
             title="Ajouter rapidement un patient (Alt + P)"
           >
-            <UserPlus className="w-4 h-4 transition-transform group-hover:scale-110" />
+            <UserPlus className="w-4 h-4 text-sky-400 transition-transform group-hover:scale-105" />
             <span className="hidden md:inline">{t('quick_patient')}</span>
-            <span className="hidden lg:inline-block px-1.5 py-0.5 rounded-md bg-white/20 text-[10px] font-mono text-white/90">
+            <span className="hidden lg:inline-block px-1.5 py-0.5 rounded-md bg-white/10 text-[9px] font-mono text-white/90">
               Alt+P
             </span>
           </button>
@@ -93,21 +93,21 @@ export const Header: React.FC = () => {
         {/* Right Section / Controls */}
         <div className="flex items-center justify-between sm:justify-end gap-3 sm:gap-4">
           {/* Current Date Badge */}
-          <div className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-sky-50 text-sky-700 text-xs font-bold border border-sky-100">
-            <CalendarIcon className="w-3.5 h-3.5 text-sky-600" />
+          <div className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-50 text-slate-600 text-xs font-bold border border-slate-200/60">
+            <CalendarIcon className="w-3.5 h-3.5 text-slate-400" />
             <span>{currentDateStr}</span>
           </div>
 
           {/* Language Switcher Pills */}
-          <div className="flex items-center bg-slate-100 p-1 rounded-2xl border border-slate-200/80">
+          <div className="flex items-center bg-slate-50 p-1 rounded-xl border border-slate-200/60">
             {(['fr', 'en', 'ar'] as Language[]).map((lang) => (
               <button
                 key={lang}
                 onClick={() => setLanguage(lang)}
-                className={`px-2.5 py-1 text-xs font-extrabold rounded-xl transition-all uppercase ${
+                className={`px-2.5 py-1 text-[10px] font-black rounded-lg transition-all uppercase ${
                   language === lang
-                    ? 'bg-sky-500 text-white shadow-sm'
-                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
+                    ? 'bg-slate-900 text-white shadow-xs'
+                    : 'text-slate-500 hover:text-slate-800 hover:bg-slate-200/30'
                 }`}
               >
                 {lang}
@@ -118,14 +118,14 @@ export const Header: React.FC = () => {
           {/* Chat Messenger Trigger button */}
           <button
             onClick={() => setIsStaffChatOpen(!isStaffChatOpen)}
-            className={`relative p-2 rounded-2xl transition-all border shrink-0 ${
+            className={`relative p-2 rounded-xl transition-all border shrink-0 ${
               isStaffChatOpen
-                ? 'bg-sky-500 border-sky-600 text-white shadow-md'
-                : 'text-slate-500 hover:text-sky-600 hover:bg-sky-50 border-transparent hover:border-sky-100'
+                ? 'bg-slate-900 border-slate-800 text-white shadow-sm'
+                : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50 border-transparent hover:border-slate-100'
             }`}
             title="Messagerie Interne Clinique"
           >
-            <MessageSquare className="w-4.5 h-4.5" />
+            <MessageSquare className="w-4 h-4" />
             {urgentMessages.length > 0 && (
               <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-rose-500 text-[8px] font-black text-white ring-2 ring-white animate-bounce">
                 {urgentMessages.length}
@@ -140,14 +140,14 @@ export const Header: React.FC = () => {
                 setIsNotificationsOpen(!isNotificationsOpen);
                 setIsProfileSelectorOpen(false);
               }}
-              className={`relative p-2 rounded-2xl transition-all border shrink-0 ${
+              className={`relative p-2 rounded-xl transition-all border shrink-0 ${
                 isNotificationsOpen
                   ? 'bg-slate-100 border-slate-200 text-slate-800'
-                  : 'text-slate-500 hover:text-sky-600 hover:bg-sky-50 border-transparent hover:border-sky-100'
+                  : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50 border-transparent hover:border-slate-100'
               }`}
               title="Système d'aiguillage"
             >
-              <Bell className="w-4.5 h-4.5" />
+              <Bell className="w-4 h-4" />
               {unreadNotifications.length > 0 && (
                 <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-emerald-500 text-[9px] font-black text-white ring-2 ring-white">
                   {unreadNotifications.length}

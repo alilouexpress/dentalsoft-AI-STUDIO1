@@ -144,7 +144,7 @@ export const RecallsView: React.FC = () => {
               À rappeler : {enrichedPatients.filter((p) => p.calculatedRecallStatus === 'À rappeler').length}
             </span>
           </div>
-          <div className="px-3 py-1.5 bg-sky-50 border border-sky-100 rounded-xl text-sky-700 text-xs font-bold flex items-center gap-1.5">
+          <div className="px-3 py-1.5 bg-sky-50 border border-slate-100 rounded-xl text-sky-700 text-xs font-bold flex items-center gap-1.5">
             <CheckCircle2 className="w-3.5 h-3.5" />
             <span>
               Taux de retour : 78%
@@ -154,7 +154,7 @@ export const RecallsView: React.FC = () => {
       </div>
 
       {/* Control Filters and Search */}
-      <div className="bg-white p-4 rounded-2xl border border-sky-100 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div className="relative flex-1 max-w-sm">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
           <input
@@ -205,7 +205,7 @@ export const RecallsView: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         
         {/* Left Column: Patients Table */}
-        <div className="lg:col-span-8 bg-white p-5 rounded-[28px] border border-sky-100 shadow-sm space-y-4">
+        <div className="lg:col-span-8 bg-white p-5 rounded-2xl border border-slate-100 shadow-xs space-y-4">
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
             <h3 className="text-sm font-extrabold text-slate-800">Patients & Suivi Semestriel</h3>
             <span className="text-[10px] text-slate-400 font-bold uppercase">
@@ -280,7 +280,7 @@ export const RecallsView: React.FC = () => {
                         <div className="flex items-center justify-end gap-2">
                           {p.calculatedRecallStatus === 'Rappel envoyé' ? (
                             <div className="flex flex-col items-end">
-                              <span className="px-2 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-100 text-[9px] font-black uppercase">
+                              <span className="px-2 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-slate-100 text-[9px] font-black uppercase">
                                 Envoyé ({p.lastRecallSentDate})
                               </span>
                               <button
@@ -316,7 +316,7 @@ export const RecallsView: React.FC = () => {
         </div>
 
         {/* Right Column: Sent Logs Timeline */}
-        <div className="lg:col-span-4 bg-white p-5 rounded-[28px] border border-sky-100 shadow-sm space-y-4">
+        <div className="lg:col-span-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-xs space-y-4">
           <div className="flex items-center gap-2 border-b border-slate-100 pb-3">
             <History className="w-4 h-4 text-slate-500" />
             <h3 className="text-sm font-extrabold text-slate-800">Logs des Rappels Envoyés</h3>

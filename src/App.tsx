@@ -156,7 +156,7 @@ const MainAppContent: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-sky-50/40 flex flex-col font-sans antialiased text-slate-800">
+    <div className="min-h-screen bg-slate-50/50 flex flex-col font-sans antialiased text-slate-800">
       <ToastContainer />
       <Header />
       <div className="flex-1 flex overflow-hidden">

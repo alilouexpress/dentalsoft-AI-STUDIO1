@@ -45,7 +45,7 @@ export const DebtsView: React.FC = () => {
 
       {/* Metric Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div className="bg-white p-5 rounded-[28px] border border-sky-100 border-b-4 border-b-sky-500 shadow-sm flex items-center gap-4">
+        <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs flex items-center gap-4">
           <div className="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center shrink-0">
             <CreditCard className="w-6 h-6" />
           </div>
@@ -55,7 +55,7 @@ export const DebtsView: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-white p-5 rounded-[28px] border border-sky-100 border-b-4 border-b-rose-500 shadow-sm flex items-center gap-4">
+        <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs flex items-center gap-4">
           <div className="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center shrink-0">
             <AlertTriangle className="w-6 h-6" />
           </div>
@@ -65,7 +65,7 @@ export const DebtsView: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-white p-5 rounded-[28px] border border-sky-100 border-b-4 border-b-amber-500 shadow-sm flex items-center gap-4">
+        <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs flex items-center gap-4">
           <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
             <CreditCard className="w-6 h-6" />
           </div>
@@ -77,7 +77,7 @@ export const DebtsView: React.FC = () => {
       </div>
 
       {/* Debts Table */}
-      <div className="bg-white rounded-[28px] border border-sky-100 shadow-sm overflow-hidden">
+      <div className="bg-white rounded-2xl border border-slate-100 shadow-xs overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left rtl:text-right text-xs">
             <thead className="bg-slate-50 border-b border-slate-200/80 text-slate-500 font-bold uppercase tracking-wider">

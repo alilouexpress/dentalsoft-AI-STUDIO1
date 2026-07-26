@@ -50,29 +50,29 @@ export const ExpensesView: React.FC = () => {
 
       {/* KPI Cards */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-slate-400 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-slate-400 uppercase">Total Dépenses</p>
           <p className="text-2xl font-black text-slate-900">{totalExp.toLocaleString()} DA</p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-sky-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-sky-500 uppercase">Dépenses Fixes</p>
           <p className="text-2xl font-black text-sky-600">{fixedExp.toLocaleString()} DA</p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-amber-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-amber-500 uppercase">Variables</p>
           <p className="text-2xl font-black text-amber-600">{variableExp.toLocaleString()} DA</p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-emerald-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-emerald-500 uppercase">Profit Est. (Bénéfice)</p>
           <p className="text-2xl font-black text-emerald-600">9 700 DA</p>
         </div>
       </div>
 
       {/* Expenses Table */}
-      <div className="bg-white rounded-[28px] border border-sky-100 shadow-sm overflow-hidden">
+      <div className="bg-white rounded-2xl border border-slate-100 shadow-xs overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left rtl:text-right text-xs">
             <thead className="bg-slate-50 border-b border-slate-200/80 text-slate-500 font-bold uppercase tracking-wider">

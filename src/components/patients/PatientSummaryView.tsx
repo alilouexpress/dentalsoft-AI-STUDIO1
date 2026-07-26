@@ -143,7 +143,7 @@ export const PatientSummaryView: React.FC<PatientSummaryViewProps> = ({
   return (
     <div className="space-y-6">
       {/* ---------------- PATIENT PROFILE HEADER CARD ---------------- */}
-      <div className="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white rounded-[32px] p-6 shadow-xl relative overflow-hidden border border-sky-800/40">
+      <div className="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white rounded-2xl p-6 shadow-xl relative overflow-hidden border border-sky-800/40">
         <div className="absolute -top-12 -right-12 w-64 h-64 rounded-full bg-sky-500/15 blur-3xl pointer-events-none"></div>
 
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
@@ -242,7 +242,7 @@ export const PatientSummaryView: React.FC<PatientSummaryViewProps> = ({
       {/* ---------------- 3 CORE METRIC HIGHLIGHT CARDS ---------------- */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {/* Metric 1: Solde Dû / Outstanding */}
-        <div className="bg-white p-4 sm:p-5 rounded-[28px] border border-sky-100 shadow-sm flex items-center justify-between">
+        <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between">
           <div className="space-y-1">
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-wider">
               SOLDE DÛ TOTAL
@@ -272,7 +272,7 @@ export const PatientSummaryView: React.FC<PatientSummaryViewProps> = ({
         </div>
 
         {/* Metric 2: Prochain Rendez-vous */}
-        <div className="bg-white p-4 sm:p-5 rounded-[28px] border border-sky-100 shadow-sm flex items-center justify-between">
+        <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between">
           <div className="space-y-1">
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-wider">
               PROCHAIN RENDEZ-VOUS
@@ -294,7 +294,7 @@ export const PatientSummaryView: React.FC<PatientSummaryViewProps> = ({
         </div>
 
         {/* Metric 3: Soins En Cours & Consultations */}
-        <div className="bg-white p-4 sm:p-5 rounded-[28px] border border-sky-100 shadow-sm flex items-center justify-between">
+        <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between">
           <div className="space-y-1">
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-wider">
               DERNIÈRE VISITE
@@ -315,7 +315,7 @@ export const PatientSummaryView: React.FC<PatientSummaryViewProps> = ({
         {/* LEFT COLUMN: Medical History & Outstanding Invoices */}
         <div className="lg:col-span-7 space-y-6">
           {/* ================= SECTION 1: MEDICAL HISTORY ================= */}
-          <div className="bg-white p-6 rounded-[28px] border border-sky-100 shadow-sm space-y-5">
+          <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-5">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3.5">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
@@ -465,7 +465,7 @@ export const PatientSummaryView: React.FC<PatientSummaryViewProps> = ({
           </div>
 
           {/* ================= SECTION 3: OUTSTANDING INVOICES ================= */}
-          <div className="bg-white p-6 rounded-[28px] border border-sky-100 shadow-sm space-y-5">
+          <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-5">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3.5">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold">
@@ -563,7 +563,7 @@ export const PatientSummaryView: React.FC<PatientSummaryViewProps> = ({
         {/* RIGHT COLUMN: Upcoming Appointments & Quick Contact */}
         <div className="lg:col-span-5 space-y-6">
           {/* ================= SECTION 2: UPCOMING APPOINTMENTS ================= */}
-          <div className="bg-white p-6 rounded-[28px] border border-sky-100 shadow-sm space-y-5">
+          <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-5">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3.5">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center font-bold">
@@ -611,7 +611,7 @@ export const PatientSummaryView: React.FC<PatientSummaryViewProps> = ({
                 {upcomingAppointments.map((appt) => (
                   <div
                     key={appt.id}
-                    className="p-4 bg-sky-50/60 border border-sky-100 rounded-2xl space-y-2 hover:bg-sky-50 transition-all"
+                    className="p-4 bg-sky-50/60 border border-slate-100 rounded-2xl space-y-2 hover:bg-sky-50 transition-all"
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -644,7 +644,7 @@ export const PatientSummaryView: React.FC<PatientSummaryViewProps> = ({
           </div>
 
           {/* Quick Contact & Emergency Details Box */}
-          <div className="bg-white p-6 rounded-[28px] border border-sky-100 shadow-sm space-y-4">
+          <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
             <h3 className="text-sm font-black text-slate-900 flex items-center gap-2">
               <Phone className="w-4 h-4 text-sky-600" />
               <span>Coordonnées & Urgences</span>
@@ -682,7 +682,7 @@ export const PatientSummaryView: React.FC<PatientSummaryViewProps> = ({
       {/* ================= MODAL: SETTLE INVOICE / RECORD PAYMENT ================= */}
       {isSettleModalOpen && (
         <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-white w-full max-w-md rounded-[28px] shadow-2xl border border-sky-100 overflow-hidden space-y-4 p-6 animate-in fade-in duration-150">
+          <div className="bg-white w-full max-w-md rounded-2xl shadow-2xl border border-slate-100 overflow-hidden space-y-4 p-6 animate-in fade-in duration-150">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div className="flex items-center gap-2">
                 <div className="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
@@ -752,7 +752,7 @@ export const PatientSummaryView: React.FC<PatientSummaryViewProps> = ({
       {/* ================= MODAL: QUICK ADD APPOINTMENT ================= */}
       {isAddApptModalOpen && (
         <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-white w-full max-w-md rounded-[28px] shadow-2xl border border-sky-100 overflow-hidden space-y-4 p-6 animate-in fade-in duration-150">
+          <div className="bg-white w-full max-w-md rounded-2xl shadow-2xl border border-slate-100 overflow-hidden space-y-4 p-6 animate-in fade-in duration-150">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div className="flex items-center gap-2">
                 <div className="w-9 h-9 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold">

@@ -71,7 +71,7 @@ export const TreatmentsView: React.FC = () => {
                 {items.map((item) => (
                   <div
                     key={item.id}
-                    className="p-5 bg-white rounded-[28px] border border-sky-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+                    className="p-5 bg-white rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
                   >
                     <div>
                       <div className="flex items-center justify-between mb-2">

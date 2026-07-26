@@ -155,7 +155,7 @@ export const StaffMessagingDrawer: React.FC<StaffMessagingDrawerProps> = ({ isOp
               // Define role backgrounds/badge styles
               let badgeStyle = 'bg-slate-100 text-slate-600';
               if (msg.senderRole === 'Admin') badgeStyle = 'bg-red-50 text-red-700 border-red-100';
-              else if (msg.senderRole === 'Médecin') badgeStyle = 'bg-sky-50 text-sky-700 border-sky-100';
+              else if (msg.senderRole === 'Médecin') badgeStyle = 'bg-sky-50 text-sky-700 border-slate-100';
               else if (msg.senderRole === 'Réceptionniste') badgeStyle = 'bg-emerald-50 text-emerald-700 border-emerald-100';
               else if (msg.senderRole === 'Assistant') badgeStyle = 'bg-amber-50 text-amber-700 border-amber-100';
 

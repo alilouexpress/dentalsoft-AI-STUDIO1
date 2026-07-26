@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import { UserRole } from '../types';
 
 // Default initial role passwords loaded from hidden environment variables or secure defaults

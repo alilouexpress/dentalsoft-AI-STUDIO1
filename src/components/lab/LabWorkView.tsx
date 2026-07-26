@@ -58,29 +58,29 @@ export const LabWorkView: React.FC = () => {
 
       {/* KPI Cards */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-sky-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-slate-400 uppercase">Total des cas</p>
           <p className="text-2xl font-black text-slate-900">{totalCases}</p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-amber-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-amber-500 uppercase">En cours</p>
           <p className="text-2xl font-black text-amber-600">{inProgress}</p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-emerald-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-emerald-500 uppercase">Terminés</p>
           <p className="text-2xl font-black text-emerald-600">{completed}</p>
         </div>
 
-        <div className="bg-white p-4 rounded-[28px] border border-sky-100 border-b-4 border-b-rose-500 shadow-sm">
+        <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-xs">
           <p className="text-[10px] font-bold text-rose-500 uppercase">Urgents</p>
           <p className="text-2xl font-black text-rose-600">{urgent}</p>
         </div>
       </div>
 
       {/* Lab cases Table */}
-      <div className="bg-white rounded-[28px] border border-sky-100 shadow-sm overflow-hidden">
+      <div className="bg-white rounded-2xl border border-slate-100 shadow-xs overflow-hidden">
         {labCases.length === 0 ? (
           <div className="py-16 text-center">
             <FlaskConical className="w-10 h-10 text-slate-300 mx-auto mb-3" />
